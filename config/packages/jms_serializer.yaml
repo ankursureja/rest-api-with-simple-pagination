@@ -1,0 +1,14 @@
+jms_serializer:
+    handlers:
+        datetime:
+            default_format: DateTime::ISO8601
+            default_timezone: UTC
+
+    metadata:
+        directories:
+            KnpPaginatorBundle:
+                namespace_prefix: Knp\Bundle\PaginatorBundle
+                path: '%kernel.project_dir%/config/serializer/KnpPaginatorBundle'
+            KnpPager:
+                namespace_prefix: Knp\Component\Pager
+                path: '%kernel.project_dir%/config/serializer/KnpPager'
